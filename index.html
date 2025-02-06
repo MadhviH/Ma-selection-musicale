@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.2">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital@1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="Unknown.png" type="image/png">
+</head>
+<body>
+  <header>
+  <div class="fixed-bg">
+    <h1 class="titlefp">UN SOIR D'ÉTÉ...</h1>
+</div>
+  </header>
+
+
+<main>
+<section>
+  <h2 id="webtitle">Ma sélection musicale d'été.</h2>
+  <p id="descriptitle"> Voici la sélection musicale que j'ai réalisé pour un soir d'été. </p>
+</section>
+
+  <div class="liste-musiques">
+  </div>
+
+    <section id="popup-overlay" class="popup">
+      <div class="popup-content">
+      </div>
+    </section>
+ 
+
+
+  <section>
+    <form class="formuser" id="formulaire-musique"> 
+          <h2 class="titleform"> Ajoutez votre musique préférée !</h2>
+
+      <fieldset>
+        <p class="txt-required" id="info-obligatoire">*Les champs marqués de l'astérisque sont obligatoires.</p>
+
+        <label for="titre">Votre musique préférée : <span class="star-required" >*</span></label> <br>
+        <input type="text" name="musique_préférée" id="titre" aria-describedby="info-obligatoire" required>  <br><br>
+  
+        <label for="Description_musique">Description de la musique :<span class="star-required" >*</span></label> <br>
+        <textarea name="Description_musique" id="Description_musique" maxlength="230" aria-describedby="info-obligatoire" required rows="4" cols="60"> </textarea><small>Maximum 230 caractères</small><br><br>
+  
+  
+        <label for="audio-url">Entrez l'URL de votre musique : <span class="star-required" >*</span>
+       </label> <br>
+        <input type="url" id="audio-url" name="audio-url" aria-describedby="info-obligatoire" required><br><br>
+
+        <label for="email">Votre adresse e-mail : <span class="star-required" >*</span></label> <br>
+        <input type="email" name="email" id="email" aria-describedby="info-obligatoire" required> <br><br>
+
+  
+        <input type="button" value="Envoyer les réponses" id="button" /> 
+      </fieldset>
+    </form>
+  </section>
+<!-- 
+Je crée ici la prévisualisation qui permettra à l'utilisateur de voir une rubrique affichant ce qu'il insère dans le formulaire -->
+  <p> 
+    <div id="backprevisu">
+    <h2 class="prevititle"> Votre musique ! </h2>
+    <div class="backmusicuser">
+      <p id="titleuser"> </p>
+      <p id="descriptionuser"> </p>
+      <p id="audiouser"> </p>
+    </div>
+    </div>
+  </p>
+  </div>
+
+</main>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Hettiarachchige Madhvi. Tous droits réservés.</p>
+      <p>Site réalisé par Madhvi Hettiarachchige</p>
+      <p class="buttoncontact"> <a href="mailto:hettiaramadhvi@gmail.com">Contactez-nous</a></p>
+      <div class="credits">
+        <h3>Crédits</h3>
+        <p>Les images utilisées sur ce site sont fournies par Google Image.</p>
+        <p>Les audios utilisées sur ce site sont fournies par Youtube.</p>
+        <p>Les musiques présentées sont sous licence libre de droits.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
